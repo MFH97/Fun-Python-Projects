@@ -93,13 +93,13 @@ def display_hangman(tries):
                 """
     ]
     return stages[tries]
-
+#Main game function
 def play_hangman():
     word = random.choice(someWords).lower()
     print('Guess the word! HINT: word is a name of a fruit')
-    print('_ ' * len(word))
+    print('_ ' * len(word)) #Shows underscores for each letter
     
-    letterGuessed = ''
+    letterGuessed = '' #Tracks guessed letters, remaining chances, and game state
     chances = len(word) + 2
     correct = 0
     flag = 0
@@ -135,7 +135,7 @@ def play_hangman():
                     print('_', end=' ')
                     
             # Check for win condition
-            if all(char in letterGuessed for char in word):
+            if all(char in letterGuessed for char in word): #all() to verify all letters guessed
                 print(f"\nThe word is: {word}")
                 print('Congratulations, You won!')
                 flag = 1
