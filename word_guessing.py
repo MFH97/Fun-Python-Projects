@@ -16,7 +16,7 @@ word = random.choice(words) #randomly picks a word from words list
 print("Guess the characters")
 
 guesses = ''
-tries = 15
+tries = 10
 
 while tries > 0:
     failed = 0
