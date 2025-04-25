@@ -23,11 +23,11 @@ while tries > 0:
     for char in word:
         if char in guesses:
             print(char, end=" ")
-            print(failed)
+    
         else:
             print("_", end=" ")
             failed += 1
-            print(failed)
+            
             
     if failed == 0:
         print()
