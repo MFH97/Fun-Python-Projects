@@ -1,9 +1,16 @@
 """"
 Hangman game
-A random word is choosen from the collection player gets limited chances to win the game
-When a letter in that word is guessed correctly, that letter position in the word is made visible.
-For convenience, we have given length of word + 2 chances. For example, word to be guessed is mango, 
-then user gets 5 + 2 = 7 chances, as mango is a five-letter word
+1.A random fruit name is selected from a predefined list.
+
+2.The player has (length of word + 2) chances to guess the word.
+
+3.For each turn, the player guesses a single letter.
+
+4.Correct guesses reveal all instances of that letter in the word.
+
+5.The game ends when either:
+ -The player guesses all letters correctly (win)
+ -The player runs out of chances (lose)
 """"
 
 import random
