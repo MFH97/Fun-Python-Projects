@@ -9,7 +9,7 @@ integer in the minimum number of guesses
 import random
 
 print("Welcome to Number Guessing game!")
-print("\nYou can guess any numbers from 1 to 100")
+print("\nYou can guess any numbers from 0 to 100")
 print("\nLet's start the game....")
 
 number_to_guess = random.randrange(100)
